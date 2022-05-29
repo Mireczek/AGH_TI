@@ -1,0 +1,413 @@
+.body{
+  height: auto;
+  min-height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  font-family: 'Open Sans',sans-serif;
+  color: #111111;
+  background-color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.6;
+  position: relative;
+}
+
+.logo{
+  height: 40px;
+  width: auto;
+}
+
+.header-container{
+  z-index: 20;
+  padding-top: 0.1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.social-container{
+  position: relative;
+  flex: 1;
+  max-width: 100%;
+}
+
+.social-icon{
+  display: flex;
+  line-height: 0;
+  border-width: 0px;
+  object-fit: contain;
+  width: 32px;
+  height: 32px;
+  margin: 14px 10px 10px auto;
+  text-align: center;
+}
+
+.sticky{
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.topnav-container {
+  background-color: rgba(77, 77, 77,0.4);
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+}
+
+
+
+.menu-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-button{
+	  padding: 10px 20px;
+    color: #ffffff !important;
+    font-family: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    display: block;
+    white-space: nowrap;
+    font-size: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    border: 0 none transparent;
+    outline-width: 0;
+    background-color: transparent;
+    margin: 0;
+}
+
+.topnav-container-collapsed {
+  position: relative;
+}
+
+.topnav #menu {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #161616;
+  color: white;
+}
+
+.slideshow-slide {
+  display: none;
+
+}
+
+.animate{
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.animate-pop {
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-duration: 0.5s;
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active-show{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slideshow-img{
+  width:100%;
+  height: 400px;
+}
+
+.slideshow-text {
+  color: #f2f2f2;
+  font-size: 15px;
+  position: absolute;
+  bottom: 164px;
+  width: 100%;
+  text-align: center;
+}
+
+.slideshow-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.slideshow-dots {
+  text-align: center;
+  position: relative;
+  bottom: 48px
+}
+
+.active, .slideshow-dot:hover {
+  background-color: #717171;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.nav-button:hover{
+	color: #f5d654 !important;
+}
+
+.footer{
+  color: #ffffff;
+  background-color: #333333;
+  text-align: center;
+  position: relative;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-text{
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header-grey{
+  font-weight: 400;
+  font-size: 18px;
+  margin: 55px 0 0;
+  color: #4d4d4d !important;
+}
+
+.text-grey{
+  color: #808080 !important;
+  font-size: 16px;
+  margin: 28px 0 0;
+}
+
+.bottom-border{
+  border-style: solid;
+  border-bottom-color: #333333;
+  border-bottom-width: 2px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+.border-white{
+  border-bottom-color: #ffffff;
+}
+
+.form-element{
+  margin-bottom: 24px;
+  padding-left: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input{
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  background-color: transparent;
+  color: inherit;
+  height: auto;
+}
+
+.form-button {
+  background-image: none;
+  border-style: none none solid;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 0;
+  color: #333333;
+}
+
+
+.section-container{
+  max-width: 1140px;
+}
+
+.v-align-container{
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px
+}
+
+.column-container-2column{
+  display: flex;
+  max-width: 50%;
+  min-width: 50%;
+  text-align: center;
+}
+
+.column-container-3column{
+  display: flex;
+  max-width: 33.3%;
+  min-width: 33.3%;
+  text-align: center;
+  padding-top: 5px;
+  padding-right: 12px;
+  padding-bottom: 5px;
+  padding-left: 12px
+}
+
+.h-align-container{
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 10px
+}
+
+.image{
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.offer-image{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(images/pexels-eberhard-grossgasteiger-1183021-9.jpg);
+  background-position: 50% 50%;
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+
+.offer-element{
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.offer-price{
+  font-size: 1.25rem; font-weight: 700;
+}
+
+.offer-button{
+  background-image: none;
+  border-style: none none solid;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+.black{
+  color: #333333;
+}
+
+.black-background{
+  background-color: #333333;
+  opacity: 0.8;
+
+}
+
+.no-padding{
+  padding: 0;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.slideshow-text {font-size: 11px}
+}
+
+@media (max-width: 600px) {
+  .h-align-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .column-container-2column, .column-container-3column{
+    max-width: 90%;
+    min-width: 90%;
+  }
+
+}
+
+@media (max-width: 1199px) {
+  .section-container {
+    min-height: 410px;
+  }
+
+}

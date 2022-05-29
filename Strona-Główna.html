@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Strona Główna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Strona-Główna.css" media="screen">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  
+    <meta property="og:title" content="Strona Główna">
+  </head>
+  <body class="body">
+    <section>
+      <div class="sticky ">
+        <div class="v-align-container no-padding reveal">
+          <div class="topnav-container"> 
+            <div class="">
+              <a href="#top" >
+                <img class="logo" src="images/logo.png">
+              </a>
+            </div>
+            <div class="menu-container">
+              <a class="nav-button" href="#top" >Main</a>
+              <a class="nav-button" href="#o-nas">O nas</a>
+              <a class="nav-button" href="#oferta">Oferta</a>
+              <a class="nav-button" href="#kontakt">Kontakt</a>
+            </div>
+          </div>
+          <div class="social-container">
+            <span class="social-icon"><img src="images/5968764.png" alt=""></span>
+            <span class="social-icon"><img src="images/174855.png" alt=""></span>
+            <span class="social-icon"><img src="images/2111728.png" alt=""></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="v-align-container no-padding">
+
+        <div class="slideshow-slide animate">
+          <img class="slideshow-img" src="images/1a.jpg">
+          <div class="slideshow-text">1000 + zadowolonych klientów</div>
+        </div>
+        
+        <div class="slideshow-slide animate">
+          <img class="slideshow-img" src="images/2a.jpg">
+          <div class="slideshow-text">15 + lat doświadczenia</div>
+        </div>
+        
+        <div class="slideshow-slide animate">
+          <img class="slideshow-img " src="images/3a.jpg">
+          <div class="slideshow-text">100000 + zrobionych kilometrów</div>
+        </div>
+        
+        <a class="prev" onclick="prevSlide()">❮</a>
+        <a class="next" onclick="nextSlide()">❯</a>
+        <div class="slideshow-dots" >
+          <span class="slideshow-dot" onclick="selectedSlide(1)"></span> 
+          <span class="slideshow-dot" onclick="selectedSlide(2)"></span> 
+          <span class="slideshow-dot" onclick="selectedSlide(3)"></span> 
+        </div>
+        </div>
+        
+    </section>
+    <section id="o-nas">
+      <div class="h-align-container">
+        <div class="h-align-container section-container ">
+              <div class="column-container-2column reveal ">
+                <div class="v-align-container">
+                  <h2 class="header-grey">O nas</h2>
+                  <p class="text-grey"> Wspinoteka to miejsce, w którym chcemy dzielić się z Wami naszym zamiłowaniem do wspinania i aktywnego spędzania wolnego czasu.&nbsp;<br>Nauczymy Was podstaw wspinania, zabierzemy w skały, pokażemy jak aktywnie i bezpiecznie spędzać w nich czas.<br>
+                    <br>Zajmujemy się organizacją zajęć wspinaczkowych na sztucznej ściance oraz w terenie.&nbsp;<br>
+                  </p>
+                </div>
+              </div>
+              <div class="column-container-2column reveal ">
+                <div class="v-align-container">
+                  <img class="image" src="images/peakpx.jpg" data-image-width="1920" data-image-height="1080">
+                </div>
+              </div>
+         
+        </div>
+      </div>
+    </section>
+    <section class="offer-image" data-image-width="1600" data-image-height="1067" id="oferta">
+      <div class="h-align-container">
+        <div class="h-align-container section-container ">
+            <div class="column-container-3column reveal">
+              <div class="v-align-container offer-element black-background">
+                <h4 >
+                  Kurs wspinaczki wysokogórskiej
+                </h4>
+                <div>Pierwszy krok do samodzielnej wspinaczki w skałach, 2 dni, Słoneczne Skały na Jurze Krakowsko-Częstochowskiej i nocleg w naszej bazie Colemana pod gołym niebem.</div>
+                <div>
+                    <div class="offer-price" >1000 zł</div>
+                </div>
+                <a href="#kontakt" class="offer-button bottom-border border-white">zapisz się</a>
+              </div>
+            </div>
+            <div class="column-container-3column reveal">
+              <div class="v-align-container offer-element black-background">
+                <h4 >
+                  W tatry z przewodnikiem
+                </h4>
+                <div>Jeżeli jesteś zainteresowany szczegółami dotyczącymi wycieczek i tras do zwiedzania, koniecznie skontaktuj się z nami. Wycieczki dolinne można zwiedzać o każdej porze roku.
+                  Wycieczkę w te piękne miejsca warto odbyć z zawodowym przewodnikiem tatrzańskim.</div>
+                <div>
+                    <div class="offer-price" >1000 zł</div>
+                </div>
+                <a href="#kontakt" class="offer-button bottom-border border-white">zapisz się</a>
+              </div>
+            </div>
+            <div class="column-container-3column reveal">
+              <div class="v-align-container offer-element black-background">
+                <h4 >
+                  Zajęcia na sztucznej ścianie
+                </h4>
+                <div>Kurs wspinaczki na sztucznej ścianie przygotowuje do samodzielnego korzystania ze sztucznych obiektów wspinaczkowych. Sprzęt omawiany jest pod kątem optymalnych zakupów własnego wyposażenia.</div>
+                <div>
+                    <div class="offer-price">Limitowana okazja jeszcze tylko!<p id="timer"></p></div>
+                    <div class="offer-price" ><s>2000 zł</s> 1000 zł </div>
+                </div>
+                <a href="#kontakt" class="offer-button bottom-border border-white">zapisz się</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="kontakt">
+      <div class="h-align-container">
+        <div class="h-align-container section-container animate-pop">
+          <div class="column-container-2column reveal">
+            <div class="v-align-container">
+              <h2 class="header-grey">Kontakt</h2>
+              <p class="text-grey">
+                <br>Pon - Sb : 9:00 – 18:00<br>kontakt@wspinoteka.pl<br>+48 600 852 390
+              </p>
+            </div>
+          </div>
+          <div class="column-container-2column reveal">
+            <div class="v-align-container">
+              <div>
+                <form action="#" method="POST" style="padding: 24px;" source="email" name="form">
+                  <div class="form-element">
+                    <input type="text" placeholder="Imię i nazwisko" name="name" class="bottom-border input" required="">
+                  </div>
+                  <div class="form-element">
+                    <input type="email" placeholder="Adres email" name="email" class="bottom-border input" required="">
+                  </div>
+                  <div class="form-element">
+                    <textarea placeholder="O co chcesz zapytać?" rows="4" cols="50" name="message" class="bottom-border input" required=""></textarea>
+                  </div>
+                  <div class="form-element">
+                    <input type="submit" value="submit" class="offer-button black bottom-border">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+        <p class="footer-text">Mirosław Jastrząb TI 2022</p>
+    </footer>
+  </body>
+  <script class="u-script" type="text/javascript" src="js.js" defer=""></script>
+</html>
